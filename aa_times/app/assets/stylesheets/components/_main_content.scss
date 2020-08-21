@@ -1,0 +1,115 @@
+.main-content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+//wraping the video in another frame allows its height to change proportionate https://css-tricks.com/fluid-width-video/
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div+p {
+    padding-top: 10px;
+}
+
+.byLine {
+    color: $dark-gray;
+}
+
+.byLine {
+    font-size: 12px;
+    padding: 2px 0 5px 0;
+}
+
+.main-content li {
+    list-style: disc;
+    margin-left: 15px;
+    padding: 10px 0;
+}
+
+.col-center li {
+    position: relative;
+    list-style: none;
+    padding-top: 10px;
+    
+}
+
+.col-center li:not(:last-child):after {
+    content: "";
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: 1px solid $gray;
+    width: 50%;
+}
+
+.col-left ul+a {
+    color: $blue;
+}
+
+.col-left ul+a:hover {
+    text-decoration: underline;
+}
+
+.main-content a:hover{
+    text-decoration: underline;
+}
+
+.col-right li {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 2px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+}
+
+.col-opinions-left, .col-opinions-right {
+    width: 50%;
+}
+
+.sign_up input {
+    border: 1px solid $gray;
+    flex: 1;
+    padding: 5px;
+    color: $gray;
+    border-radius: 5px 0 0 5px;
+}
+.sign_up button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border-color: $gray;
+}
+.sign_up div {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.sign_up p {
+    font-size: 11px;
+    color: $dark-gray;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

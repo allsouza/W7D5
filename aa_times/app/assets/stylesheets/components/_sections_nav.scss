@@ -1,0 +1,26 @@
+
+.sections {
+    overflow: auto;
+}
+.sections_nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid $light-gray;
+    
+}
+
+.sections_nav li {
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+
+.sections_nav ul li a:hover {
+    background: $gray;
+}
+
+#all:hover {
+    text-decoration: underline;
+    background: transparent;
+}

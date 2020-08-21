@@ -1,0 +1,98 @@
+.sections-sidebar {
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    border: 1px solid $light-gray;
+    width: 200px;
+    font-size: 10px;
+    box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+}
+
+.sections-sidebar li:hover{
+    cursor: pointer;
+    background: $lightest-blue;
+}
+
+.expand {
+    display: block;
+}
+
+.sections-sidebar li {
+    padding: 7px 20px;
+    box-sizing: border-box;
+}
+
+.sections-sidebar section{
+    background: transparent;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+
+li:hover > .dropdown > .dropdown-menu {
+    display: block;
+}
+
+.sections-sidebar > li {
+    position: relative;
+    margin-right: 10px;
+}
+
+.sections-sidebar > li:after,
+.sections-sidebar > li:before 
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border-left: 5px solid gray;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    height: 0;
+}
+.sections-sidebar > li:after {
+    right: 2px;
+    border-left: 5px solid white;
+    z-index: 1;
+}
+
+//Box
+.dropdown ul {
+    position: absolute;
+    z-index: 3;
+    top: -20px;
+    left: 170px;
+    width: 180px;
+    border: 1px solid $light-gray;
+    box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+}
+.dropdown-arrow-outline {
+    position: absolute;
+    left: 155px;
+    top: -10px;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right:15px solid $light-gray;
+    background: transparent 
+}
+.dropdown-arrow {
+    z-index: 4;
+    position: absolute;
+    left: 156px;
+    top: -10px;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right:15px solid white;
+    background: transparent 
+}

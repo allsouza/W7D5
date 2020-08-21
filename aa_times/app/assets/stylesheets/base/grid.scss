@@ -1,0 +1,56 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Attribute selector targeting all elements
+with a class attribute containing 'col-' */
+.col-left {
+  width: 20%;
+}
+.col-center {
+  width: 50%;
+}
+
+.col-right {
+  width: 30%;
+}
+
+.col-right .opinions {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-opinions-left {
+  width: 50%;
+}
+
+.col-opinions-right  {
+  width: 50%;
+}
+
+.col-right h2 {
+  display: block;
+  text-align: center;
+}
+
+[class*='col-'] {
+  padding: 10px;
+}
+
+@media all and (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+  }
+  [class*='col-'] {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .language-nav, .main-nav button, .sections_nav {
+    display: none;
+  }
+
+  
+}

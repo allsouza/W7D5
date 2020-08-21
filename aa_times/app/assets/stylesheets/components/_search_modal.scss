@@ -1,0 +1,22 @@
+.search-modal{
+    display: none;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.expand {
+    display: flex;
+}
+
+.search-modal input {
+    border: 1px solid $light-gray;
+    width: 70%;
+    font-size: 22px;
+}
+
+.search-modal button {
+    background: transparent;
+    color: $gray;
+    border: 1px solid $light-gray;
+    padding: 8px;
+}
